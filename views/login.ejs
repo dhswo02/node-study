@@ -1,0 +1,8 @@
+<% include ./header.ejs %>
+  <h1>접속중인 사용자</h1>
+  <ul>
+      <%for (var i = 0, max = member.length; i < max; i +=1){%>
+          <li><%= member[i]%></li>
+      <%}%>
+  </ul>
+ <% include ./footer.ejs %>
